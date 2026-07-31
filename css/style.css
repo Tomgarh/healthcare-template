@@ -327,9 +327,417 @@ nav a.active{
 
 .fade.show{
     opacity:1;
-    transform:translateY(0);
+
+}
+/* ==========================
+   MEDICINE ENQUIRY
+========================== */
+
+.medicine-enquiry{
+
+    padding:100px 0;
+
+    background:#ffffff;
+
 }
 
+.enquiry-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.enquiry-text span{
+
+    color:#009688;
+
+    font-weight:600;
+
+}
+
+.enquiry-text h2{
+
+    font-size:42px;
+
+    margin:20px 0;
+
+}
+
+.enquiry-text p{
+
+    color:#666;
+
+    margin-bottom:30px;
+
+}
+
+.enquiry-text ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.enquiry-form{
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.enquiry-form form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.enquiry-form input{
+
+    padding:16px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.enquiry-form input:focus{
+
+    border-color:#009688;
+
+}
+
+.upload-box{
+
+    border:2px dashed #009688;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    color:#009688;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.upload-box:hover{
+
+    background:#f3fffd;
+
+}
+
+.upload-box i{
+
+    display:block;
+
+    font-size:32px;
+
+    margin-bottom:12px;
+
+}
+
+.enquiry-form .btn{
+
+    width:100%;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+/* ==========================
+   FEATURED PRODUCTS
+========================== */
+
+.featured-products{
+
+    padding:100px 0;
+
+    background:#f8fbfb;
+
+}
+
+.products-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.product-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+
+}
+
+.product-card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+}
+
+.product-info{
+
+    padding:25px;
+
+}
+
+.category{
+
+    display:inline-block;
+
+    background:#e6f7f5;
+
+    color:#009688;
+
+    padding:6px 12px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+
+.product-info h3{
+
+    margin-bottom:10px;
+
+}
+
+.product-info p{
+
+    color:#666;
+
+    margin-bottom:25px;
+
+}
+
+.product-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.product-bottom h4{
+
+    color:#009688;
+
+    font-size:22px;
+
+}
+
+.btn-small{
+
+    background:#009688;
+
+    color:#fff;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-small:hover{
+
+    background:#00796b;
+
+}
+
+/* ==========================
+   TEAM
+========================== */
+
+.team{
+
+    padding:100px 0;
+
+    background:#ffffff;
+
+}
+
+.team-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.team-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.team-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.team-card img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+}
+
+.team-content{
+
+    padding:30px;
+
+}
+
+.team-content h3{
+
+    margin-bottom:8px;
+
+    font-size:24px;
+
+}
+
+.team-content span{
+
+    display:block;
+
+    color:#009688;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.team-content p{
+
+    color:#666;
+
+    margin-bottom:25px;
+
+}
+
+.team-social{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+.team-social a{
+
+    width:42px;
+
+    height:42px;
+
+    background:#f3f8f8;
+
+    color:#009688;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.3s;
+
+}
+
+.team-social a:hover{
+
+    background:#009688;
+
+    color:#fff;
+
+}
 /* ==========================
    SECTION TITLE
 ========================== */
@@ -1099,6 +1507,16 @@ footer{
         grid-template-columns:1fr;
         text-align:center;
     }
+    .products-grid{
+
+        grid-template-columns:repeat(2,1fr);
+    
+    }
+    .team-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
 
 }
 
@@ -1168,6 +1586,34 @@ footer{
 
     .contact-map iframe{
         min-height:300px;
+    }
+
+    .enquiry-content{
+
+        grid-template-columns:1fr;
+    
+    }
+    
+    .enquiry-text{
+    
+        text-align:center;
+    
+    }
+    
+    .enquiry-text h2{
+    
+        font-size:32px;
+    
+    }
+    .products-grid{
+
+        grid-template-columns:1fr;
+    
+    }
+    .team-grid{
+
+        grid-template-columns:1fr;
+
     }
 
 }
