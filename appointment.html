@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NovaCare Healthcare Centre</title>
+
+    <meta name="description" content="Professional pharmacy and diagnostic healthcare services.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= TOP BAR ================= -->
+    <div class="top-bar">
+
+        <div class="container">
+    
+            <div class="top-left">
+    
+                <span>
+                    <i class="fa-solid fa-phone"></i>
+                    +234 810 232 1111
+                </span>
+    
+                <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    info@novacare.com
+                </span>
+    
+            </div>
+    
+            <div class="top-right">
+    
+                <span>
+                    <i class="fa-regular fa-clock"></i>
+                    Mon - Sat: 8:00 AM - 8:00 PM
+                </span>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="container">
+
+            <div class="logo">
+
+                NovaCare
+            
+            </div>
+            
+            <div class="menu-toggle">
+            
+                <i class="fa-solid fa-bars"></i>
+            
+            </div>
+            
+            <nav>
+            
+                <ul>
+            
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Health Services</a></li>
+                    <li><a href="appointment.html" class="active">Appointments</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            
+            </nav>
+
+            <a href="#" class="btn">
+
+                Book Appointment
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- ================= PAGE HERO ================= -->
+
+<section class="page-hero">
+    <div class="container">
+        <h1>Book an Appointment</h1>
+        <p>
+            Schedule a visit with our healthcare professionals for consultations,
+            laboratory services, and other healthcare needs.
+        </p>
+    </div>
+</section>
+
+<!-- ================= APPOINTMENT ================= -->
+
+<section class="appointment-section">
+
+    <div class="container appointment-grid">
+
+        <!-- Form -->
+
+        <div class="appointment-form">
+
+            <h2>Schedule Your Visit</h2>
+
+            <form id="appointmentForm">
+
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" id="phone" placeholder="0801 234 5678">
+
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" id="email" placeholder="example@email.com">
+
+                </div>
+
+                <div class="form-group">
+                    <label>Select Service</label>
+
+                    <select id="service">
+                        <option>Choose a service</option>
+                        <option>Laboratory Test</option>
+                        <option>Health Consultation</option>
+                        <option>Blood Pressure Check</option>
+                        <option>Blood Sugar Test</option>
+                        <option>Pharmacy Consultation</option>
+                    </select>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>Preferred Date</label>
+                        <input type="date" id="date">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferred Time</label>
+                        <input type="time" id="time">
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label>Additional Information</label>
+
+                    <textarea id="message" rows="5"
+                    placeholder="Tell us anything we should know..."></textarea>
+                </div>
+
+                <button class="btn" type="submit">
+                    Book Appointment
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- Sidebar -->
+
+        <div class="appointment-info">
+
+            <div class="info-card">
+
+                <h3>Opening Hours</h3>
+
+                <p>Monday - Friday</p>
+                <strong>8:00 AM - 8:00 PM</strong>
+
+                <br><br>
+
+                <p>Saturday</p>
+                <strong>9:00 AM - 6:00 PM</strong>
+
+                <br><br>
+
+                <p>Sunday</p>
+                <strong>Emergency Services Only</strong>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>Need Immediate Help?</h3>
+
+                <p>
+                    Speak directly with one of our healthcare professionals.
+                </p>
+
+                <a href="https://wa.me/2349034292248" class="btn">
+                    Chat on WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h2>NovaCare</h2>
+
+            <p>
+                Delivering trusted pharmacy and diagnostic healthcare services
+                with compassion and professionalism.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Health Services</a></li>
+                <li><a href="appointment.html">Appointments</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>+234 800 000 0000</p>
+            <p>info@novacare.com</p>
+            <p>Calabar, Nigeria</p>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+        <p>
+
+            © 2026 NovaCare Healthcare Centre. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+
+
+    </body>
+
+    </html>

@@ -174,3 +174,133 @@ if (fadeElements.length > 0) {
     });
 
 }
+
+const appointmentForm = document.getElementById("appointmentForm");
+
+if (appointmentForm) {
+
+    appointmentForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone").value;
+        const email = document.getElementById("email").value;
+        const service = document.getElementById("service").value;
+        const date = document.getElementById("date").value;
+        const time = document.getElementById("time").value;
+        const message = document.getElementById("message").value;
+    
+        const whatsappNumber = "2349034292248"; 
+    
+        const text =
+    `*New Appointment Request*
+    
+    👤 Name: ${name}
+    
+    📞 Phone: ${phone}
+    
+    📧 Email: ${email}
+    
+    🩺 Service: ${service}
+    
+    📅 Date: ${date}
+    
+    🕒 Time: ${time}
+    
+    📝 Additional Information:
+    ${message}`;
+    
+        const url =
+    `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+    
+        window.open(url, "_blank");
+    
+
+    });
+
+}
+
+// ======================================
+// CONTACT FORM
+// ======================================
+
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        const name = document.getElementById("contactName").value.trim();
+        const email = document.getElementById("contactEmail").value.trim();
+        const phone = document.getElementById("contactPhone").value.trim();
+        const message = document.getElementById("contactMessage").value.trim();
+
+        if (!name || !phone || !message) {
+            alert("Please fill in your name, phone number and message.");
+            return;
+        }
+
+        const whatsappNumber = "2348102321111";
+
+        const text =
+`*New Website Enquiry*
+
+👤 Name: ${name}
+
+📞 Phone: ${phone}
+
+📧 Email: ${email || "Not provided"}
+
+💬 Message:
+${message}`;
+
+        const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+        window.open(url, "_blank");
+
+    });
+
+}
+
+// ======================================
+// MEDICINE SEARCH
+// ======================================
+
+const medicineSearch = document.getElementById("medicineSearch");
+
+if (medicineSearch) {
+
+    medicineSearch.addEventListener("input", function () {
+
+        const searchValue = this.value.toLowerCase().trim();
+
+        const rows = document.querySelectorAll("#medicineTable tbody tr");
+
+        rows.forEach((row) => {
+
+            const medicine = row.cells[0].textContent.toLowerCase();
+            const category = row.cells[1].textContent.toLowerCase();
+            const status = row.cells[2].textContent.toLowerCase();
+
+            if (
+                medicine.includes(searchValue) ||
+                category.includes(searchValue) ||
+                status.includes(searchValue)
+            ) {
+
+                row.style.display = "";
+
+            } else {
+
+                row.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+}

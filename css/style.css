@@ -1367,6 +1367,946 @@ box-shadow:0 20px 45px rgba(0,0,0,.15);
 }
 
 /* ==========================
+   ABOUT PAGE
+========================== */
+
+.about-page{
+
+    padding:100px 0;
+
+}
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    border-radius:20px;
+
+}
+
+.section-tag{
+
+    color:#009688;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+.about-content h2{
+
+    margin:15px 0 20px;
+
+}
+
+.about-content p{
+
+    margin-bottom:20px;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/* Mission */
+
+.mission-vision{
+
+    padding:100px 0;
+
+    background:#f8fbfb;
+
+}
+
+.mission-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+.mission-card{
+
+    background:#fff;
+
+    padding:40px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.mission-card i{
+
+    font-size:45px;
+
+    color:#009688;
+
+    margin-bottom:20px;
+
+}
+
+/* Why Us */
+
+.why-us{
+
+    padding:100px 0;
+
+}
+
+.section-description{
+
+    text-align:center;
+
+    max-width:700px;
+
+    margin:20px auto 60px;
+
+    color:#666;
+
+}
+
+/* Team */
+
+.team-section{
+
+    padding:100px 0;
+
+    background:#f8fbfb;
+
+}
+
+.team-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.team-card{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.team-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.team-card img{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+}
+
+.team-card h3{
+
+    margin:20px 0 10px;
+
+}
+
+.team-card p{
+
+    color:#666;
+
+    margin-bottom:25px;
+
+}
+
+@media(max-width:768px){
+
+    .about-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+#scrollTop{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+
+    width:55px;
+    height:55px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#009688;
+    color:#fff;
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+    z-index:1000;
+
+    transition:.3s;
+}
+
+#scrollTop:hover{
+    transform:translateY(-5px);
+    background:#00796b;
+}
+
+#scrollTop i{
+    line-height:1;
+}
+
+/* ==========================
+   PAGE HERO
+========================== */
+
+.page-hero{
+    background:#009688;
+    color:#fff;
+    padding:90px 0;
+    text-align:center;
+}
+
+.page-hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.page-hero p{
+    max-width:650px;
+    margin:auto;
+    opacity:.95;
+}
+
+/* ==========================
+   APPOINTMENT
+========================== */
+
+.appointment-section{
+    padding:100px 0;
+    background:#f8fbfb;
+}
+
+.appointment-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
+}
+
+.appointment-form,
+.info-card{
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.appointment-form h2{
+    margin-bottom:30px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+
+.form-group label{
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-family:inherit;
+    font-size:16px;
+}
+
+.form-group textarea{
+    resize:vertical;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.appointment-info{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.info-card h3{
+    margin-bottom:20px;
+    color:#009688;
+}
+
+.info-card p{
+    color:#666;
+    margin-bottom:5px;
+}
+
+.info-card .btn{
+    margin-top:20px;
+    display:inline-block;
+}
+
+/* ==========================
+   CONTACT PAGE
+========================== */
+
+.contact-page{
+
+    padding:100px 0;
+
+    background:#f8fbfb;
+
+}
+
+.contact-page-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:40px;
+
+}
+
+.contact-form,
+.contact-details{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.contact-form h2{
+
+    margin-bottom:30px;
+
+}
+
+.contact-details{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.contact-details .btn{
+
+    margin-top:10px;
+
+    text-align:center;
+
+}
+
+.contact-map-section iframe{
+
+    width:100%;
+
+    height:500px;
+
+    border:none;
+
+}
+
+/* ==========================
+   PRESCRIPTION CTA
+========================== */
+
+.prescription-section{
+
+    padding:100px 0;
+
+    background:#009688;
+
+}
+
+.prescription-box{
+
+    max-width:850px;
+
+    margin:auto;
+
+    text-align:center;
+
+    color:#fff;
+
+}
+
+.prescription-box h2{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.prescription-box p{
+
+    font-size:18px;
+
+    margin-bottom:40px;
+
+    opacity:.95;
+
+}
+
+.prescription-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.prescription-buttons .btn{
+
+    background:#fff;
+
+    color:#009688;
+
+}
+
+.prescription-buttons .btn:hover{
+
+    background:#f2f2f2;
+
+}
+
+.prescription-buttons .btn-outline{
+
+    border:2px solid #fff;
+
+    color:#fff;
+
+}
+
+.prescription-buttons .btn-outline:hover{
+
+    background:#fff;
+
+    color:#009688;
+
+}
+
+/* ==========================
+   MEDICINES PAGE
+========================== */
+
+.medicine-section{
+
+    padding:100px 0;
+
+    background:#f8fbfb;
+
+}
+
+.medicine-search{
+
+    max-width:600px;
+
+    margin:0 auto 40px;
+
+}
+
+.medicine-search input{
+
+    width:100%;
+
+    padding:16px 20px;
+
+    font-size:16px;
+
+    border:2px solid #ddd;
+
+    border-radius:12px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.medicine-search input:focus{
+
+    border-color:#009688;
+
+    box-shadow:0 0 10px rgba(0,150,136,.2);
+
+}
+
+.table-wrapper{
+
+    overflow-x:auto;
+
+    background:#fff;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+#medicineTable{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+#medicineTable th{
+
+    background:#009688;
+
+    color:#fff;
+
+    padding:18px;
+
+    text-align:left;
+
+}
+
+#medicineTable td{
+
+    padding:18px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+#medicineTable tbody tr{
+
+    transition:.3s;
+
+}
+
+#medicineTable tbody tr:hover{
+
+    background:#f5fffd;
+
+}
+
+.stock{
+
+    display:inline-block;
+
+    padding:8px 14px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.available{
+
+    background:#dff7e5;
+
+    color:#1b7f3a;
+
+}
+
+.low{
+
+    background:#fff4d6;
+
+    color:#b78103;
+
+}
+
+.unavailable{
+
+    background:#ffe3e3;
+
+    color:#c92a2a;
+
+}
+
+/* ==========================
+   MEDICINE CTA
+========================== */
+
+.medicine-cta{
+
+    margin-top:70px;
+
+    padding:60px;
+
+    background:#009688;
+
+    color:#fff;
+
+    border-radius:20px;
+
+    text-align:center;
+
+}
+
+.medicine-cta h2{
+
+    font-size:36px;
+
+    margin-bottom:20px;
+
+}
+
+.medicine-cta p{
+
+    max-width:650px;
+
+    margin:0 auto 35px;
+
+    opacity:.95;
+
+}
+
+.medicine-cta .btn{
+
+    background:#fff;
+
+    color:#009688;
+
+}
+
+.medicine-cta .btn:hover{
+
+    background:#f2f2f2;
+
+}
+
+/* ==========================
+   BLOG PAGE
+========================== */
+
+.blog-page{
+
+    padding:100px 0;
+
+    background:#f8fbfb;
+
+}
+
+.blog-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.blog-card{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.blog-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.blog-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.blog-content{
+
+    padding:30px;
+
+}
+
+.blog-content span{
+
+    color:#009688;
+
+    font-weight:600;
+
+    font-size:14px;
+
+}
+
+.blog-content h3{
+
+    margin:15px 0;
+
+}
+
+.blog-content p{
+
+    color:#666;
+
+    margin-bottom:25px;
+
+    line-height:1.7;
+
+}
+
+.blog-content a{
+
+    color:#009688;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+/* ==========================
+   NEWSLETTER
+========================== */
+
+.newsletter{
+
+    padding:100px 0;
+
+    background:#009688;
+
+    color:#fff;
+
+    text-align:center;
+
+}
+
+.newsletter h2{
+
+    margin-bottom:20px;
+
+}
+
+.newsletter p{
+
+    margin-bottom:35px;
+
+}
+
+.newsletter-form{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.newsletter-form input{
+
+    width:350px;
+
+    max-width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:8px;
+
+    outline:none;
+
+}
+
+.newsletter .btn{
+
+    background:#fff;
+
+    color:#009688;
+
+}
+
+.newsletter .btn:hover{
+
+    background:#f2f2f2;
+
+}
+
+@media(max-width:768px){
+
+    .newsletter-form{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .medicine-section{
+
+        padding:70px 0;
+
+    }
+
+    #medicineTable{
+
+        min-width:600px;
+
+    }
+
+    .medicine-cta{
+
+        padding:40px 25px;
+
+    }
+
+    .medicine-cta h2{
+
+        font-size:28px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .prescription-box h2{
+
+        font-size:32px;
+
+    }
+
+    .prescription-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+    .contact-page-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .appointment-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+    .page-hero h1{
+        font-size:36px;
+    }
+
+}
+
+/* ==========================
    FOOTER
 ========================== */
 
